@@ -1,0 +1,115 @@
+/* src/components/TaskList.css */
+
+@import "tailwindcss";
+
+.task-list {
+    @apply container grid grid-cols-5 gap-4 md:grid-cols-3 lg:grid-cols-8;
+}
+
+.selection-detailed {
+    @apply container grid grid-cols-3 gap-4;
+}
+
+.task-item {
+    @apply border p-4 rounded shadow bg-white;
+}
+
+
+.task-title {
+    @apply font-bold text-lg;
+}
+
+
+.task-description {
+    @apply mb-2 text-gray-700;
+}
+
+
+.task-status {
+    @apply text-sm text-gray-500;
+}
+
+
+.task-actions {
+    @apply mt-2;
+}
+
+
+.task-toggle-button {
+    @apply bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-200;
+}
+
+
+.task-delete-button {
+    @apply bg-red-500 text-white p-2 rounded hover:bg-red-600 transition duration-200 ml-2;
+}
+
+.task-edit-input {
+    @apply border border-gray-300 rounded p-2 mb-2 w-full;
+}
+
+
+.task-save-button {
+    @apply bg-green-500 text-white p-2 rounded hover:bg-green-600 transition duration-200 mr-2;
+}
+
+
+.task-cancel-button {
+    @apply bg-gray-500 text-white p-2 rounded hover:bg-gray-600 transition duration-200;
+}
+
+
+.task-edit-button {
+    @apply bg-yellow-500 text-white p-2 rounded hover:bg-yellow-600 transition duration-200;
+}
+
+.search-input {
+    @apply border border-gray-300 rounded p-2 mb-4 w-full transition duration-300;
+}
+
+
+.search-input:focus {
+    @apply border-blue-500 ring;
+}
+
+.filter-select {
+    @apply border border-gray-300 rounded p-2 mb-4 w-full transition duration-300;
+}
+
+
+.filter-select:hover {
+    @apply bg-gray-100;
+}
+
+.sort-button {
+    @apply bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-200 mb-4;
+}
+
+@media (max-width: 640px) {
+    .task-list {
+        @apply container grid grid-cols-1 gap-4;
+    }
+}
+
+@media (min-width: 640px) {
+    .task-list {
+        @apply container grid grid-cols-2 gap-4;
+    }
+}
+@media (min-width: 768px) {
+    .task-list {
+        @apply container grid grid-cols-3 gap-4; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .task-list {
+        @apply container grid grid-cols-4 gap-4;
+    }
+}
+
+@media (min-width: 1280px) {
+    .task-list {
+        @apply container grid grid-cols-5 gap-4;
+    }
+}

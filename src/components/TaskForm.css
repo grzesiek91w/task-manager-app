@@ -1,0 +1,20 @@
+/* src/components/TaskForm.css */
+
+@import "tailwindcss";
+
+.task-form {
+    @apply bg-white shadow-md rounded-lg p-6 mb-4;
+}
+
+.task-input,
+.task-select {
+    @apply mb-4 p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500; 
+}
+
+.task-button {
+    @apply bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition duration-200; 
+}
+
+.task-button:disabled {
+    @apply bg-gray-400 text-gray-700 cursor-not-allowed;
+}
